@@ -6,6 +6,6 @@ Sample CRUD Node.js & ExpressJS & MongoDB Web Application
 - git clone https://github.com/rootkick/O_E_K.git
 - cd O_E_K/
 - npm install (Pray in spare time for this to work)
-- mongod (in another cli windows)
+- mongod (in another cli window)
 - node app.js
 - Thank me
