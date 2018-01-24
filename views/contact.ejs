@@ -1,0 +1,134 @@
+<% include partials/header %>   
+
+   <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+
+          <h1 class="my-4">Contact us
+       
+          </h1>
+
+          <!-- Blog Post -->
+          <div class="card mb-4">
+            <img class="card-img-top" src="/img/oek.png" height="400" width="20" alt="Card image cap">
+            <div class="card-body">
+			
+</head>
+<body>
+<style>
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.containerr {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+
+<h3>Contact Form</h3>
+
+<div class="containerr">
+  <form method="POST" action="/contactus">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="kosovo">Kosovo</option>
+      <option value="albania">Albania</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+			
+			
+            </div>
+          
+          </div>
+
+
+          <!-- Pagination -->
+        
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+          <!-- Search Widget -->
+          
+				
+
+			
+		  
+		  
+
+        
+		
+
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Find us on maps</h5>
+            <div class="card-body">
+             <div id="map" style="width:300px;height:300px;background:grey"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+	  
+	  	<script>
+				function myMap() {
+				var mapOptions = {
+				center: new google.maps.LatLng(42.6626284, 21.1625122),
+				zoom: 18,
+				mapTypeId: google.maps.MapTypeId.HYBRID
+				}
+				var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+				}
+				</script>
+
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD57jWHGV1pAyfYiSQ0mou8bzEQXqeBmIg&callback=myMap"></script>
+		
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+<% include partials/footer %>

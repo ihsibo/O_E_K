@@ -1,0 +1,28 @@
+<% include partials/header %>
+<div class="container">
+<br>
+
+<form method="POST" action="/data/update/<%= doc._id %>">
+   <div>
+      <label>Title: </label>
+      <input type="text" value ="<%= doc.title %>"name="title">
+   </div>
+      <div>
+      <label>Author: </label>
+      <input type="text" value ="<%= doc.author %>" name="author">
+   </div>
+   <div>
+      <label>Todo description: </label>
+      <textarea name="description"  placeholder="Add description">
+	  <%= doc.description %>
+      </textarea>
+   </div>
+       <div>
+      <label>Image source: </label>
+      <input type="text" value="<%= doc.source %>"  name="images">
+   </div>
+   
+   <button type="submit">Save</button>
+</form>
+</div>
+<% include partials/footer %>

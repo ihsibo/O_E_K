@@ -1,0 +1,35 @@
+
+<% include partials/header %>
+
+
+<div class="container">
+<h3>Add Articles</h3>
+ <form method="POST" action="/addArticle">
+   <div>
+      <label>Title: </label><br>
+      <input type="text" name="title">
+   </div>
+      <div>
+      <label>Author: </label><br>
+      <input type="text" name="author">
+   </div>
+   <div>
+      <label>Article Description: </label><br>
+      <textarea name="description">
+      </textarea>
+   </div>
+      <div>
+      <label>Image source: </label><br>
+      <input type="text" name="images">
+   </div>
+   <br>
+   <button type="submit">Submit</button>
+</form> 
+
+
+
+</div>
+
+</div>
+<% include partials/footer %>
+

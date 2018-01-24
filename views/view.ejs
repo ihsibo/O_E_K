@@ -1,0 +1,39 @@
+<% include partials/header %>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+
+          <h2 class="my-4">Welcome!</h2><br>
+          
+
+
+          <!-- Blog Post -->
+          <div class="card mb-4">
+		  <% docs.map(function(doc) { %>
+            <img class="card-img-top" src="<%= doc.source %>" alt="Card image cap" height="300" width="100">
+            <div class="card-body">
+			
+              <h2 class="card-title"><%= doc.title %></h2>
+              <p class="card-text"><%= doc.description %></p>
+              <a href="/data/<%= doc._id %>" class="btn btn-primary">Read More &rarr;</a>
+			  <br><br>
+			  <% }); %>
+            </div>
+         
+          </div>
+
+      </div>
+		</div>
+		  </div>
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+<% include partials/footer %>
